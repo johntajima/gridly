@@ -6,6 +6,13 @@ Create a simple grid layout that is either
 - fixed width (generally 1920x1080 for use on a HDTV layout)
 - relative (scales in size, best suited for desktop)
 
+
+### demo pages
+
+- [Basic fixed layout](http://redronin.github.com/gridly/examples/nogutter.html)
+- [Basic fixed layout with gutter](http://redronin.github.com/gridly/examples/gutter.html)
+
+
 ### usage
 
 1. Include `gridly.js` in your page. Ensure you have `jquery` loaded before as well.
@@ -98,9 +105,3 @@ $('#mygrid').gridly({width:1920, rows:4, cols:6})
 
 or you can specify `data-` attributes in the `div` element of the grid.
 
-
-
-### demo pages
-
-- [Basic fixed layout](http://redronin.github.com/gridly/examples/nogutter.html)
-- [Basic fixed layout with gutter](http://redronin.github.com/gridly/examples/gutter.html)
