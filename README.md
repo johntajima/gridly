@@ -102,5 +102,5 @@ or you can specify `data-` attributes in the `div` element of the grid.
 
 ### demo pages
 
-- fixed layout
-- relative
+- [Basic fixed layout](http://redronin.github.com/gridly/examples/nogutter.html)
+- [Basic fixed layout with gutter](http://redronin.github.com/gridly/examples/gutter.html)

@@ -2,7 +2,7 @@
 <head>
   <title>Gridly.js demo page - fixed</title>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src='src/gridly.js'></script>
+  <script src='./src/gridly.js'></script>
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
@@ -43,7 +43,7 @@
 
 <body>
   
-  <div class='grid' id="mygrid" data-rows='4' data-cols='6' data-orientation='horizontal' data-width='1920' data-height='1080' data-gutter='2'>
+  <div class='grid' id="mygrid" data-rows='4' data-cols='6' data-orientation='horizontal' data-width='1920' data-height='1080'>
 
     <!-- row 1 -->  
     <div class='cell cell_a' data-cell-y='1' data-cell-x='1' data-cell-w='1' data-cell-h='1'>
@@ -155,7 +155,7 @@
 
 <script>
 $(function(){
-  $('#mygrid').gridly();
+  $('#mygrid').gridly({ gutter:0});
 })
 
 </script> 
