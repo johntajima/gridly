@@ -1,163 +1,71 @@
+<!doctype html>
 <html>
-<head>
-  <title>Gridly.js demo page - fixed</title>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src='src/gridly.js'></script>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Gridly by redronin</title>
 
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
-  <style>
-  body { margin:0; padding:0; width:100%; height: 100%; overflow:hidden; background: #333;}
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Gridly</h1>
+        <p>A simple jQuery plugin for arranging div elements into a grid.</p>
 
-  #mygrid { 
-    margin: 0 auto;
-    background: #000; 
-    width: 1920px; 
-    height: 1080px;
-    display:block; position: relative; 
-    overflow:hidden; 
-  }
-
-  .cell { 
-    margin:0; padding:0; 
-  }
-
-  .cell_a { background: #664466;}
-  .cell_b { background: #333366;}
-  .cell_c { background: #331166;}
-  .cell_d { background: #661165;}
-  .cell_e { background: #666666;}
-  .cell_f { background: #660000;}
-
-  .widget { 
-    width: 100%; height: 100%;
-    padding: 5px; 
-    color: #fff;
-  }
-
-  </style>
+        <p class="view"><a href="https://github.com/redronin/gridly">View the Project on GitHub <small>redronin/gridly</small></a></p>
 
 
+        <ul>
+          <li><a href="https://github.com/redronin/gridly/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/redronin/gridly/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/redronin/gridly">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-</head>
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<body>
-  
-  <div class='grid' id="mygrid" data-rows='4' data-cols='6' data-orientation='horizontal' data-width='1920' data-height='1080' data-gutter='2'>
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
 
-    <!-- row 1 -->  
-    <div class='cell cell_a' data-cell-y='1' data-cell-x='1' data-cell-w='1' data-cell-h='1'>
-      <div class='widget'>
-        <h4>Widget Alpha</h4>
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/redronin">redronin</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-
-    <div class='cell cell_b' data-cell-y='1' data-cell-x='2' data-cell-w='1' data-cell-h='1'>
-      <div class='widget'>
-        <h4>Widget Beta</h4>
-        <p>Another sample widget</p>
-      </div>
-    </div>
-
-    <div class='cell cell_c' data-cell-y='1' data-cell-x='3' data-cell-w='1' data-cell-h='1'>
-      <div class='widget'>
-        <h4>Widget Delta</h4>
-        <p>hello world, this is a widget</p>
-      </div>
-    </div>
-
-    <div class='cell cell_d' data-cell-y='1' data-cell-x='4' data-cell-w='1' data-cell-h='1'>
-      <div class='widget'>
-        <h4>Widget Alpha</h4>
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
-    </div>
-
-    <div class='cell cell_e' data-cell-y='1' data-cell-x='5' data-cell-w='1' data-cell-h='1'>
-      <div class='widget'>
-        <h4>Widget Alpha</h4>
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
-    </div>
-
-    <div class='cell cell_f' data-cell-y='1' data-cell-x='6' data-cell-w='1' data-cell-h='1'>
-      <div class='widget'>
-        <h4>Widget Zeta</h4>
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
-    </div>
-
-    <!-- row 2 -->
-    <div class='cell cell_f' data-cell-y='2' data-cell-x='1' data-cell-w='2' data-cell-h='1'>
-      <div class='widget'>
-        <h4>Widget Alpha</h4>
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
-    </div>
-
-    <div class='cell cell_b' data-cell-y='2' data-cell-x='3' data-cell-w='2' data-cell-h='1'>
-      <div class='widget'>
-        <h4>Widget Alpha</h4>
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
-    </div>
-
-    <div class='cell cell_c' data-cell-y='2' data-cell-x='5' data-cell-w='1' data-cell-h='2'>
-      <div class='widget'>
-        <h4>Widget Alpha</h4>
-        <p>Lorem ipsum dolor sit amet</p>
-      </div>
-    </div>
-
-    <div class='cell cell_d' data-cell-y='2' data-cell-x='6' data-cell-w='1' data-cell-h='3'>
-      <div class='widget'>
-        <h4>Widget Tall</h4>
-        <p>Very tall</p>
-      </div>
-    </div>
-
-    <!-- row 3 -->
-    <div class='cell cell_d' data-cell-y='3' data-cell-x='1' data-cell-w='2' data-cell-h='2'>
-      <div class='widget'>
-        <h4>Widget Tall</h4>
-        <p>Very tall</p>
-      </div>
-    </div>
-    <div class='cell cell_a' data-cell-y='3' data-cell-x='3' data-cell-w='1' data-cell-h='1'>
-      <div class='widget'>
-        <h4>Widget Omega</h4>
-        <p>Another simple widget</p>
-      </div>
-    </div>
-    <div class='cell cell_f' data-cell-y='3' data-cell-x='4' data-cell-w='1' data-cell-h='1'>
-      <div class='widget'>
-        <h4>Widget Omega</h4>
-        <p>Another simple widget</p>
-      </div>
-    </div>
-
-    <!-- row 4 -->
-    <div class='cell cell_e' data-cell-y='4' data-cell-x='3' data-cell-w='2' data-cell-h='1'>
-      <div class='widget'>
-        <h4>Widget Wide</h4>
-        <p>Another simple widget</p>
-      </div>
-    </div>
-    <div class='cell cell_f' data-cell-y='4' data-cell-x='5' data-cell-w='1' data-cell-h='1'>
-      <div class='widget'>
-        <h4>Widget Gamma</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, neque, hic totam officiis commodi dolorem dolores necessitatibus odit maxime vitae dolore quidem ducimus aspernatur dolor quia est veritatis. Quae, totam!</p>
-      </div>
-    </div>
-
-  </div>
-
-<script>
-$(function(){
-  $('#mygrid').gridly();
-})
-
-</script> 
-</body>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
 </html>
