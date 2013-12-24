@@ -16,17 +16,17 @@ Create a simple grid layout that is either
 ```
 <div class='gridly' id='mygrid' data-rows='4' data-cols='6' data-width='1920' data-height='1080' data-orientation='horizontal'>
   <!-- cell in row 1, col 1, width of 1x and height of 1x -->
-  <div class='cell' data-cell-x='1' data-cell-y='1' data-cell-w='1' data-cell-h='1'>
+  <div class='cell' data-col='1' data-row='1' data-width='1' data-height='1'>
    your content
   </div>
 
   <!-- cell in row 1, cols 2-3, width of 2x and heigh of 1 -->
-  <div class='cell' data-cell-x='2' data-cell-y='1' data-cell-w='2' data-cell-h='1'>
+  <div class='cell' data-col='2' data-row='1' data-width='2' data-height='1'>
    your content
   </div>
 
   <!-- a 2x2 cell in row 1, col 4 -->
-  <div class='cell' data-cell-x='4' data-cell-y='1' data-cell-w='2' data-cell-h='2'>
+  <div class='cell' data-col='4' data-row='1' data-width='2' data-height='2'>
    your content
   </div>
 
