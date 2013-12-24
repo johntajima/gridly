@@ -94,10 +94,10 @@
     }
 
     $(grid).find('.cell').each(function(){      
-      var x = parseInt($(this).data('cell-x'), 10) - 1;
-      var y = parseInt($(this).data('cell-y'), 10) - 1;
-      var w = parseInt($(this).data('cell-w') || 1, 10);
-      var h = parseInt($(this).data('cell-h') || 1, 10);
+      var x = parseInt($(this).data('col'), 10) - 1;
+      var y = parseInt($(this).data('row'), 10) - 1;
+      var w = parseInt($(this).data('width') || 1, 10);
+      var h = parseInt($(this).data('height') || 1, 10);
 
       var topPos, leftPos, newWidth, newHeight;
       var gutterWidth = gutter * 2;
